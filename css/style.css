@@ -26,19 +26,19 @@ body {
   scroll-snap-destination: 0% 100%;
   scroll-snap-points-x: repeat(100%);
   box-shadow: 0 0 30px 10px #666;
+}
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.slider::-webkit-scrollbar {
+  display: none;
+}
 
-  &.vertical {
-    flex-direction: column;
-    overflow-x: visible;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    scroll-snap-destination: 100% 0;
-    scroll-snap-points-y: repeat(100%);
-  }
+.slider.vertical {
+  flex-direction: column;
+  overflow-x: visible;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-snap-destination: 100% 0;
+  scroll-snap-points-y: repeat(100%);
 }
 
 .slide {
